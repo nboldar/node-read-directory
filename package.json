@@ -1,0 +1,27 @@
+{
+  "name": "node-read-directory",
+  "version": "1.0.0",
+  "description": "nodejs simple function for reading directory recursively, no matter how deep is it",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nboldar/node-read-directory.git"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Nikolay Boldar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nboldar/node-read-directory/issues"
+  },
+  "homepage": "https://github.com/nboldar/node-read-directory#readme",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
