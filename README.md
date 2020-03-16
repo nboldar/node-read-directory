@@ -1,14 +1,14 @@
-# node-read-directory
+# node-read-directory#
 Nodejs simple lightweight function for reading directory recursively, no matter how deep is it
-##Instalation
+##Instalation##
 `npm i node-read-directory`
 
-##Usage
+##Usage##
 `const readDirectory = require('node-read-directory');`
 
 `readDirectory('./sourceDir').then( data => console.log(data)).catch( error => console.error(error));`
 
-##How it works
+##How it works##
 For example source directory looks like below:<br/>
 C:\USERS\USER\PROJECTS\UNTITLED\SRC </p>  
 │&nbsp;&nbsp;&nbsp;1.png  
