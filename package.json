@@ -20,7 +20,9 @@
     "url": "https://github.com/nboldar/node-read-directory/issues"
   },
   "homepage": "https://github.com/nboldar/node-read-directory#readme",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npmjs.com/"
+  },
   "devDependencies": {
     "jest": "^25.1.0"
   }
