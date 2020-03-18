@@ -54,5 +54,4 @@ const readDirectory = async (src) => {
     };
     return await iterateDir(src);
 };
-readDirectory('./dir').then(data=>console.log(data)).catch(err=>console.log(err));
 module.exports = readDirectory;
