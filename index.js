@@ -28,7 +28,7 @@ const path = require('path');
 const readDirectory = async (src) => {
     if (typeof src !== 'string') throw  new Error('Path of read dir should be string');
     const arr = [];
-    src = path.isAbsolute(src) ? src : path.resolve(__dirname, src);
+    src = path.isAbsolute(src) ? src : path.resolve(process.cwd(), src);
     const rootDir = src;
     const iterateDir = async (src) => {
         try {
@@ -54,4 +54,5 @@ const readDirectory = async (src) => {
     };
     return await iterateDir(src);
 };
+readDirectory('./dir').then(data=>console.log(data)).catch(err=>console.log(err));
 module.exports = readDirectory;
