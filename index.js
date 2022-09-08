@@ -36,6 +36,8 @@ const readDirectory = async (src) => {
             if (result.length === 0) {
                 let data = path.parse(src);
                 data.readDir = rootDir;
+                data.isDirectory = 'true';
+                data.isFile = 'false';
                 arr.push(data)
             }
             for await (const dirent of result) {
@@ -44,6 +46,8 @@ const readDirectory = async (src) => {
                 } else {
                     let data = path.parse(`${src + path.sep + dirent.name}`);
                     data.readDir = rootDir;
+                    data.isDirectory = 'false';
+                    data.isFile = 'true';
                     arr.push(data)
                 }
             }
